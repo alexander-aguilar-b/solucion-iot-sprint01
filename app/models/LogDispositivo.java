@@ -9,9 +9,19 @@ import java.util.Date;
 public class LogDispositivo {
     @Id
     private ObjectId _id;
+    private String nombre;
     private String variable;
     private String valor;
     private String estado;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     private Date fecha;
 
     public void setId(ObjectId _id) {
